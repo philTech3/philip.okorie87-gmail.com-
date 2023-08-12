@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Define a CSS class with the styles you want */
+  .highlighted {
+    background-color: blue;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<div>This is a div.</div>
+<span>This is a span.</span>
+<h1>This is an h1.</h1>
+<h2>This is an h2.</h2>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+<em>This is emphasized text.</em>
+
+<script>
+  // Select all the elements you want to style
+  const elementsToStyle = document.querySelectorAll('p, div, span, h1, h2, ul li, em');
+
+  // Loop through the elements and apply the 'highlighted' class
+  elementsToStyle.forEach(element => {
+    element.classList.add('highlighted');
+  });
+</script>
+
+</body>
+</html>
